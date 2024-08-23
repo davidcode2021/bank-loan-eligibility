@@ -1,1 +1,4 @@
-    About the project  this project
+    About the project  
+this is a project on a model that can predict whether someone is eligilbe for a loan or not. The project is more relevant to financial institution when given out loans. The model will take all the relevant information like gender, marital status, dependant,education etc, (that was use in training it) in other to predict whether someone is eligible for a loan. The model is build up to deployment stage.
+The source of data for training the model is kaggle. For more information about the data you can follow the link "https://www.kaggle.com/datasets/vikasukani/loan-eligible-dataset/data"
+The key files Contain in the folder are the saved model, the html template, the virtual eviroment folder(venv7) for flask and other packages,the  data use in training the model and the codes for the model in ipynb file.
