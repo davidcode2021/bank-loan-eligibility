@@ -1,0 +1,109 @@
+.bod {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo-container {
+     display:flex;
+     align-items:center;
+}
+
+.logo-container img {
+    width:150px;
+    height: 150px;
+    margin-right: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.logo-container h2 {
+    border-top-left-radius: 0rem;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #03055b;
+    font-style: unset;
+    
+}
+
+
+.footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.p{
+    margin-top: -100px;
+    position: relative;
+    font-weight: bold;
+
+    top:-30px;
+    margin: 20px;
+    font-family: 35;
+    color: #030a5f;
+    
+}
+.bold-text{
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(18, 15, 199);
+align-content: center;
+
+}
+.form{
+margin-top: -20px;
+margin-left: 350px;
+}
+.button{
+text-align: center;
+color: #f1f1f1;
+background-color: #030a5f;
+width: 100px;
+padding: 0.01px 0.01px;
+border-radius: 10px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+margin: 0 18pc;
+
+}
+
+.boxsize{
+width: 200px;
+height: 30px;
+box-sizing: border-box;
+
+}
+.header{
+text-align: center;
+font-size: 20px;
+font-style: italic;
+}
+
+.pred{
+    text-align: center;
+    color: #008000;
+    font-weight: bold;
+    font-size:50px;
+}
+.pred1{
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 50px;
+}
+.myinput{
+width: 50px;
+min-width: 100px;
+max-width: 200px;
+box-sizing: border-box;
+transition: width 0.5s ease-in-out;
+}
+.myinput:focus{
+width: auto;
+min-width: 50px;
+}

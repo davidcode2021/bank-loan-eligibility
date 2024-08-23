@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link to your CSS file -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script> Chart.js for interactive charts -->
+
+ </head>
+ <body class="bod">
+     <div
+         class="logo-container">
+         <img src="{{url_for('static',filename='images/Bluehouse.jpg')}}" alt="Bluehouse-logo" class="logo-container img">
+     <h2 class="logo-container h2"> loan eligibility status </h2>
+     </div>
+     
+     <div class="header">
+         <p class="p">Insert all the information and predict whether a Customer is eligible for a loan</p>
+     </div>
+     <div class="bold-text">
+         <form action="/predict"method="POST" class=form>
+             <label for="gender">Gender:</label>
+             <input type="text" id="gender" name="Gender"required>
+
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+             &nbsp; &nbsp; &nbsp; 
+            
+            
+            <label for="Married">Married:</label>
+
+            <input type=" text" id="Married" name="Married"required>
+            <br><br>
+            
+            <label for="Dependents">Dependents:</label>
+            <input type="number" id="Dependents" name="Dependents" max="3"required>
+
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            
+            
+             
+            <label for="Education">Education:</label>
+            <input type="text" id="Education" name="Education" required>
+            <br><br>
+            <label for="Self-Employed">Self-Employed:</label>
+            <input type="text" id="Self-Employed"name="Self-Employed" required>
+
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            
+            
+            
+            <label for="ApplicantIncome">ApplicantIncome:</label>
+            <input type="number" id="ApplicantIncome" name="ApplicantIncome" required>
+            <br><br>
+            <label for="CoapplicantIncome">CoapplicantIncome:</label>
+            <input type="number" id="CoapplicantIncome" name="CoapplicantIncome" required>
+
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <label for="LoanAmount">LoanAmount:</label>
+            <input type="number" id="LoanAmount" name="LoanAmount" required>
+            <br><br>
+            <label for="Loan_Amount_Term">Loan_Amount_Term:</label>
+            <input type="number" id="Loan_Amount_Term" name="Loan_Amount_Term" required>
+
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            
+            <label for="Credit_History">Credit_History:</label>
+            <input type="text" id ="Credit_History" name="Credit_History required">
+            <br><br>
+            <label for="Property_Area"> Property_Area:</label>
+                <input type="text" id="Property_Area"name="Property_Area" required>
+                <br>
+             <div> <button class="button" type="submit"><h3>predict</h3</button></div>   
+       </form></div><br>
+        
+       <div class="pred"> {{pred}}</div> 
+       <div class="pred1">{{pred1}}</div>
+</body>
+</html> 
+        
